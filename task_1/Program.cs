@@ -75,9 +75,9 @@ int columns = NewMessage("Введите количество столбцов: 
 int minNumber = NewMessage("Введите диапазон чисел ОТ: ");
 int maxNumber = NewMessage("Введите диапазон чисел ДО: ");
 
-int[,] new2dArray = GenerationMatrix(rows, columns, minNumber, maxNumber);
-PrintMatrix(new2dArray);
+int[,] Array = GenerationMatrix(rows, columns, minNumber, maxNumber);
+PrintMatrix(Array);
 Console.WriteLine();
-int[,] orderArray = ArrangeMatrix(new2dArray, rows);
+int[,] orderArray = ArrangeMatrix(Array, rows);
 PrintMatrix(orderArray);
 
